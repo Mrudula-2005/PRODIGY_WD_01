@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel with Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS for service details */
+        .service-details {
+            display: none;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+        }
+
+        /* CSS for the destinations grid */
+        .destinations-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .destination {
+            text-align: center;
+        }
+
+        .destination img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Search input styling */
+        #search {
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">TravelWithUs</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Image Slider -->
+    <section id="hero">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="image1.jpeg" alt="Travel Image 1">
+                </div>
+                <div class="slide">
+                    <img src="travel Image 2.jpg" alt="Travel Image 2">
+                </div>
+                <div class="slide">
+                    <img src="jeremy-bishop-dvACrXUExLs-unsplash.jpg" alt="Travel Image 3">
+                </div>
+                <div class="slide">
+                    <img src="travel Image 4.jpg" alt="Travel Image 4">
+                </div>
+                <div class="slide">
+                    <img src="Travel Image 5.jpg" alt="Travel Image 5">
+                </div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+        <h1>Explore the World with Us</h1>
+        <p>Your adventure begins here</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service" id="flightBooking">
+            <img src="service1.jpg" alt="Service">
+            <h3>Flight Booking</h3>
+            <p>We offer the best flight deals to destinations worldwide. <a href="#" class="expand-details">Learn More</a></p>
+            <div class="service-details">
+                <p>Book your flights hassle-free with TravelWithUs. We provide competitive prices and excellent customer service.</p>
+            </div>
+        </div>
+        <div class="service" id="hotelReservations">
+            <img src="service2.jpg" alt="Service">
+            <h3>Hotel Reservations</h3>
+            <p>Stay in comfort with our exclusive hotel deals. <a href="#" class="expand-details">Learn More</a></p>
+            <div class="service-details">
+                <p>Explore our handpicked selection of hotels offering luxury and convenience at affordable rates.</p>
+            </div>
+        </div>
+        <div class="service" id="tourPackages">
+            <img src="service3.jpg" alt="Service">
+            <h3>Tour Packages</h3>
+            <p>Explore new places with our guided tours and packages. <a href="#" class="expand-details">Learn More</a></p>
+            <div class="service-details">
+                <p>Discover curated tour packages designed to immerse you in local culture and breathtaking landscapes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations">
+        <h2>Popular Destinations</h2>
+        <input type="text" id="search" placeholder="Search destinations...">
+        <div class="destinations-grid">
+            <div class="destination">
+                <img src="destination1.jpg" alt="Paris, France">
+                <h3>Paris, France</h3>
+            </div>
+            <div class="destination">
+                <img src="destination2.jpg" alt="Tokyo, Japan">
+                <h3>Tokyo, Japan</h3>
+            </div>
+            <div class="destination">
+                <img src="destination3.jpg" alt="New York, USA">
+                <h3>New York, USA</h3>
+            </div>
+            <div class="destination">
+                <img src="destination4.jpg" alt="Sydney, Australia">
+                <h3>Sydney, Australia</h3>
+            </div>
+            <div class="destination">
+                <img src="destination5.jpg" alt="Rome, Italy">
+                <h3>Rome, Italy</h3>
+            </div>
+            <div class="destination">
+                <img src="destination6.jpg" alt="Barcelona, Spain">
+                <h3>Barcelona, Spain</h3>
+            </div>
+            <div class="destination">
+                <img src="destination7.jpg" alt="Bali, Indonesia">
+                <h3>Bali, Indonesia</h3>
+            </div>
+            <div class="destination">
+                <img src="destination8.jpg" alt="Cape Town, South Africa">
+                <h3>Cape Town, South Africa</h3>
+            </div>
+            <div class="destination">
+                <img src="destination9.jpg" alt="Dubai, UAE">
+                <h3>Dubai, UAE</h3>
+            </div>
+            <div class="destination">
+                <img src="destination10.jpg" alt="Istanbul, Turkey">
+                <h3>Istanbul, Turkey</h3>
+            </div>
+            <div class="destination">
+                <img src="destination11.jpg" alt="London, UK">
+                <h3>London, UK</h3>
+            </div>
+            <div class="destination">
+                <img src="destination12.jpg" alt="Rio de Janeiro, Brazil">
+                <h3>Rio de Janeiro, Brazil</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>"TravelWithUs made our honeymoon unforgettable! The service was excellent."</p>
+            <cite>- John and Jane Doe</cite>
+        </div>
+        <div class="testimonial">
+            <p>"Our family vacation was seamless thanks to TravelWithUs. Highly recommend!"</p>
+            <cite>- The Smith Family</cite>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <div class="contact-info">
+            <p>Phone: 123-456-7890</p>
+            <p>Email: contact@travelwithus.com</p>
+            <p>Address: 123 Travel St, Adventure City, Country</p>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div id="responseMessage" class="response-message"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 TravelWithUs. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let slides = document.querySelectorAll('.slide');
+                slides.forEach((slide, index) => {
+                    slide.style.display = 'none';
+                });
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1; }
+                slides[slideIndex - 1].style.display = 'block';
+                setTimeout(showSlides, 3000); // Change image every 3 seconds
+            }
+
+            document.querySelector('.prev').addEventListener('click', () => {
+                slideIndex -= 2;
+                if (slideIndex < 0) { slideIndex = slides.length - 1; }
+                showSlides();
+            });
+
+            document.querySelector('.next').addEventListener('click', () => {
+                showSlides();
+            });
+
+            // Function to toggle service details visibility
+            function toggleServiceDetails(service) {
+                const serviceDetails = service.querySelector('.service-details');
+                serviceDetails.style.display = (serviceDetails.style.display === 'block') ? 'none' : 'block';
+            }
+
+            // Add click event listeners to each service
+            const services = document.querySelectorAll('.service');
+            services.forEach(service => {
+                const expandLink = service.querySelector('.expand-details');
+                expandLink.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    toggleServiceDetails(service);
+                });
+            });
+
+            // Contact form submission handling
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+
+                if (name && email && message) {
+                    document.getElementById('responseMessage').textContent = 'Thank you for contacting us, ' + name + '! We will get back to you shortly.';
+                    document.getElementById('responseMessage').style.color = 'green';
+
+                    // Clear the form
+                    document.getElementById('contactForm').reset();
+                } else {
+                    document.getElementById('responseMessage').textContent = 'Please fill in all fields.';
+                    document.getElementById('responseMessage').style.color = 'red';
+                }
+            });
+
+            // Search functionality for destinations
+            const searchInput = document.getElementById('search');
+            const destinations = document.querySelectorAll('.destination');
+
+            searchInput.addEventListener('input', function() {
+                const searchTerm = searchInput.value.toLowerCase();
+                destinations.forEach(destination => {
+                    const destinationName = destination.querySelector('h3').textContent.toLowerCase();
+                    if (destinationName.includes(searchTerm)) {
+                        destination.style.display = 'block';
+                    } else {
+                        destination.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
